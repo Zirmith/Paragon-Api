@@ -1,0 +1,157 @@
+/* Set the background color to a dark shade */
+body {
+    background-color: #1a202c;
+    color: #fff;
+  }
+  
+  /* Set the color of links to a lighter shade */
+  a {
+    color: #e2e8f0;
+  }
+  
+  /* Add a box shadow to all cards */
+  .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Add a box shadow to the loader */
+  .loader {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Change the background color of the loader to a lighter shade */
+  .loader:before {
+    background-color: #f7fafc;
+  }
+  
+  /* Style the API key input */
+  input[type="text"] {
+    background-color: #2d3748;
+    border: none;
+    color: #fff;
+  }
+  
+  /* Style the API usage list */
+  .list-group-item {
+    background-color: #2d3748;
+    border: none;
+    color: #fff;
+  }
+  
+  /* Style the API usage badge */
+  .badge-primary {
+    background-color: #4a5568;
+  }
+  
+  /* Style the remaining usage badge */
+  .badge-warning {
+    background-color: #d69e2e;
+  }
+  
+  /* Style the API documentation list */
+  .list-group-item a.btn-primary {
+    background-color: #4a5568;
+    border-color: #4a5568;
+    color: #fff;
+  }
+  
+  /* Style the API documentation list on hover */
+  .list-group-item a.btn-primary:hover {
+    background-color: #2d3748;
+    border-color: #2d3748;
+    color: #fff;
+  }
+  
+  /* Add a box shadow to the API documentation cards */
+  #main .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Custom card styles */
+.card {
+    background-color: #1c1e26;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .card p {
+    color: #c7c7c7;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  
+  .card input[type="text"] {
+    background-color: #2d303e;
+    border: none;
+    color: #fff;
+  }
+  
+  .card ul {
+    margin-bottom: 0;
+  }
+  
+  .card .list-group-item {
+    background-color: #2d303e;
+    border: none;
+    color: #c7c7c7;
+  }
+  
+  .card .list-group-item a {
+    color: #fff;
+  }
+  
+  .card .list-group-item .badge {
+    background-color: #4a4e5e;
+  }
+  
+  .card .list-group-item.d-flex.justify-content-between.align-items-center::before,
+  .card .list-group-item.d-flex.justify-content-between.align-items-center::after {
+    display: none;
+  }
+  
+  .card .list-group-item.d-flex.justify-content-between.align-items-center:hover {
+    background-color: #3d4150;
+  }
+  
+  .card .list-group-item.d-flex.justify-content-between.align-items-center:hover a {
+    color: #fff;
+  }
+  
+  .card .list-group-item.d-flex.justify-content-between.align-items-center:hover .badge {
+    background-color: #5c5f6f;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background-color: #2d2d2d;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: auto
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #255ad5, #2257a0);
+    border-radius: 10px;
+    animation: glowing 2s ease infinite;
+  }
+  
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1d3e8a, 0 0 35px #1d3e8a, 0 0 40px #1d3e8a, 0 0 50px #1d3e8a;
+    }
+    100% {
+      box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1d3e8a, 0 0 35px #1d3e8a, 0 0 40px #1d3e8a, 0 0 50px #1d3e8a;
+      filter: brightness(120%) saturate(150%);
+    }
+  }
+  

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>API Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+  <!-- Welcome screen -->
+  <section id="welcome">
+    <div class="container">
+      <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-md-6 text-center">
+          <h1>Welcome to the API Dashboard</h1>
+          <p>Log in with Discord to get started</p>
+          <a id="logindiscord" class="btn btn-primary">Log in with Discord</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Loader -->
+  <div class="loader"></div>
+
+  <!-- Main content area -->
+  <section id="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2>API Key</h2>
+              <p>Here is your API key:</p>
+              <input type="text" class="form-control YOUR_API_KEY" value="Waiting For Key..." id="apikeyhere" readonly>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2>API Usage</h2>
+              <p>Here is your API usage:</p>
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Requests sent
+                  <span class="badge badge-primary badge-pill" id="requestssent">∞</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Requests remaining
+                  <span class="badge badge-warning badge-pill" id="untilcantuse">∞</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+              <div class="card-body">
+                <h2>API Documentation</h2>
+                <p>Learn how to use our API:</p>
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    API Reference
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#examples-content1" aria-expanded="false" aria-controls="examples-content1">View</button>
+                  </li>
+                  <div id="examples-content1" class="collapse">
+                    <p>This is an example of how to use our API:</p>
+                    <pre><code>// Example code goes here</code></pre>
+                  </div>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Authentication
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#examples-content2" aria-expanded="false" aria-controls="examples-content2">View</button>
+                  </li>
+                  <div id="examples-content2" class="collapse">
+                    <p>This is an example of how to use our API:</p>
+                    <pre><code>// Example code goes here</code></pre>
+                  </div>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Examples
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#examples-content3" aria-expanded="false" aria-controls="examples-content3">View</button>
+                  </li>
+                  <div id="examples-content3" class="collapse">
+                    <p>This is an example of how to use our API:</p>
+                    <pre><code>// Example code goes here</code></pre>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+</section>
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+<!-- Custom JS -->
+<script src="custom.js"></script>
+<script>
+  // Get all the collapsible list items
+  const collapsibleItems = document.querySelectorAll('.list-group-item');
+
+  // Add a click event listener to each item
+  collapsibleItems.forEach(item => {
+    const contentId = item.getAttribute('data-target');
+    const content = document.querySelector(contentId);
+    
+    item.addEventListener('click', () => {
+      // Toggle the collapse state of the content
+      content.classList.toggle('show');
+    });
+  });
+</script>
+
+</body>
+</html>
