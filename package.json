@@ -20,12 +20,14 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-error-handler": "^1.1.0",
+    "express-session": "^1.17.3",
     "getmac": "^5.20.0",
     "helmet": "^6.0.1",
     "memory-cache": "^0.2.0",
     "mongodb": "^5.1.0",
     "node-cache": "^5.1.2",
     "nodemon": "^2.0.20",
+    "os": "^0.1.2",
     "winston": "^3.8.2"
   }
 }
